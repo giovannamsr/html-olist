@@ -1,0 +1,7 @@
+.image-container {
+    display: flex; /* Use flexbox to arrange images side by side */
+}
+
+.image-container img {
+    margin-right: 20px; /* Add some margin between the images */
+}
