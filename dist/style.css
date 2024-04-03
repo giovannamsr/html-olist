@@ -5,3 +5,17 @@
 .image-container img {
     margin-right: 20px; /* Add some margin between the images */
 }
+
+.image-cluster11 {
+    width: 10%;
+    height: 10%;
+}
+
+.olist-logo {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 50%; /* ajuste de acordo com o tamanho desejado */
+    height: 50%; /* mantém a proporção original da imagem */
+}
+

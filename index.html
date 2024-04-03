@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -13,13 +13,15 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
 	</head>
 	<body>
+		<!--<img src="https://d3hw41hpah8tvx.cloudfront.net/images/logo_olist_d7309b5f20.png" alt="Olist logo" style="height: 100px; margin: 0 auto 4rem auto; background: transparent;" class="olist-logo">-->
 		<div class="reveal">
 			<div class="slides">
 				<!--Slide 1-->
 				<section>
-				    <img src="https://d3hw41hpah8tvx.cloudfront.net/images/logo_olist_d7309b5f20.png" alt="reveal.js logo" style="height: 200px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+				    <img src="https://d3hw41hpah8tvx.cloudfront.net/images/logo_olist_d7309b5f20.png" alt="Olist logo" style="height: 200px; margin: 0 auto 4rem auto; background: transparent;" class="olist-logo">
 				    <h3 class="title">Análise da base de clientes Olist</h3>
 					<h7>Projeto integrador - 3° Trimestre</h7>
 				    <small><br>André Dambry, Arnaldo Chebl, Giovanna Mendes, Isabella Gobbi, Tiago Pardo</small>
@@ -35,6 +37,7 @@
 							<li>Definir próximos passos para a olist e “How might we?”</li>
 						</ul>
 					</div>
+					
 				</section>
 				<!--Slide 3-->
 				<section>
@@ -46,7 +49,7 @@
 						</ul>
 					</div>
 				</section>
-				<!--Slide 4-->
+				<!--Slide 5-->
 				<section>
 					<div class="content">
 						<h3 style="color:blue;text-align:left;">Utilizando o método do cotovelo, é possivel observar que o número ótimo de clusters seria 12</h3>
@@ -57,7 +60,19 @@
 					    </ul>
 					</div>
 				</section>
-				<!--Slide 5-->
+				<!--Slide 6-->
+				<section>
+					<div class="content">
+						<h6>Os clientes são concentrados na região sudeste, tendo uma participação considerável nos clusters</h6>
+					    <p>&nbsp;</p>
+
+					</div>
+					<div class="image-container">
+						<img src="images/top5_categories_cluster.png" alt="Top5_categories" style="width:40%">
+					    <img src="images/valor_agregado_categoria.png" alt="aggregated_value_categories" style="width:40%">
+					</div>
+				</section>
+				<!--Slide 7-->
 				<section>
 					<div class="content">
 						<h6>A categoria casa conforto é a mais comprada da Olist, além de trazer mais valor agregado</h6>
@@ -68,6 +83,35 @@
 						<img src="images/top5_categories_cluster.png" alt="Top5_categories" style="width:40%">
 					    <img src="images/valor_agregado_categoria.png" alt="aggregated_value_categories" style="width:40%">
 					</div>
+				</section>
+				<!--Slide 8-->
+				<section>
+					<div class="content">
+						<h6>O cluster 8 e 11 também apresentam maior ticket médio e contém avaliações mistas</h6>
+						<small>Ticket médio de cada perfil de cliente (escala logarítmica)</small>
+					    <p>&nbsp;</p>
+
+					</div>
+					<div class="image-container">
+					    <img src="images/valor_agregado_categoria.png" alt="aggregated_value_categories" style="width:40%">
+					</div>
+				</section>
+				<!--Slide 9-->
+				<section>
+					<div class="content">
+						<h9>O cluster 11 apresenta características interessantes para a construção de uma persona</h9>
+					    <p>&nbsp;</p>
+
+					</div>
+					<img src="images/cluster11.jpg" alt="aggregated_value_categories">
+				</section>
+				<!--Slide 11-->
+				<section>
+					<div class="content">
+						<h9>A base de clientes do cluster 11 se concentra na região Sudeste, principalmente em São Paulo</h9>
+						<small>Densidade de clientes por região</small>
+					</div>
+					<img src="images/heatmap_brasil.png" alt="Densidade de clientes por região" style="width:50%">
 				</section>
 			</div>
 		</div>
