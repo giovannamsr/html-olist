@@ -8,11 +8,25 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/solarized.css">
 		<link rel="stylesheet" href="dist/theme/style.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			.image-bulletpoint-container {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+			}
+
+			.image-bulletpoint-container img {
+				width: 20%;}
+
+			.image-bulletpoint-container ul li {
+				font-size: 24px;} /* Define o tamanho da fonte dos bullet points */
+			
+		</style>
 
 	</head>
 	<body>
@@ -29,7 +43,7 @@
 				<!--Slide 2-->
 				<section>
 					<div class="content">
-						<h3>Objetivos do projeto</h3>
+						<h3 class="title">Objetivos do projeto</h3>
 						<ul>
 							<li>Explorar a base de clientes da olist e encontrar padrões significativos</li>
 							<li>Desenhar a persona de acordo com o cluster escolhido e seus respectivos padrões</li>
@@ -42,7 +56,7 @@
 				<!--Slide 3-->
 				<section>
 					<div class="content">
-						<h3>Agenda</h3>
+						<h3 class="title">Agenda</h3>
 						<ul>
 							<li>Análise exploratória</li>
 							<li>Definição do Cluster</li>
@@ -52,7 +66,7 @@
 				<!--Slide 5-->
 				<section>
 					<div class="content">
-						<h3 style="color:blue;text-align:left;">Utilizando o método do cotovelo, é possivel observar que o número ótimo de clusters seria 12</h3>
+						<h3 class="title">Utilizando o método do cotovelo, é possivel observar que o número ótimo de clusters seria 12</h3>
 						<ul>
 							<li>Para auxiliar no entendimento da base de clientes, é feita uma segmentação dos clientes com clusterização</li>
 							<li>A clusterização foi feita pelo algoritmo de Machine Learning K-prototypes</li>
@@ -63,7 +77,7 @@
 				<!--Slide 6-->
 				<section>
 					<div class="content">
-						<h6>Os clientes são concentrados na região sudeste, tendo uma participação considerável nos clusters</h6>
+						<h6 class="title">Os clientes são concentrados na região sudeste, tendo uma participação considerável nos clusters</h6>
 					    <p>&nbsp;</p>
 
 					</div>
@@ -75,7 +89,7 @@
 				<!--Slide 7-->
 				<section>
 					<div class="content">
-						<h6>A categoria casa conforto é a mais comprada da Olist, além de trazer mais valor agregado</h6>
+						<h6 class="title">A categoria casa conforto é a mais comprada da Olist, além de trazer mais valor agregado</h6>
 					    <p>&nbsp;</p>
 
 					</div>
@@ -87,7 +101,7 @@
 				<!--Slide 8-->
 				<section>
 					<div class="content">
-						<h6>O cluster 8 e 11 também apresentam maior ticket médio e contém avaliações mistas</h6>
+						<h6 class="title">O cluster 8 e 11 também apresentam maior ticket médio e contém avaliações mistas</h6>
 						<small>Ticket médio de cada perfil de cliente (escala logarítmica)</small>
 					    <p>&nbsp;</p>
 
@@ -99,7 +113,7 @@
 				<!--Slide 9-->
 				<section>
 					<div class="content">
-						<h9>O cluster 11 apresenta características interessantes para a construção de uma persona</h9>
+						<h9 class="title">O cluster 11 apresenta características interessantes para a construção de uma persona</h9>
 					    <p>&nbsp;</p>
 
 					</div>
@@ -108,10 +122,38 @@
 				<!--Slide 11-->
 				<section>
 					<div class="content">
-						<h9>A base de clientes do cluster 11 se concentra na região Sudeste, principalmente em São Paulo</h9>
+						<h9 class="title">A base de clientes do cluster 11 se concentra na região Sudeste, principalmente em São Paulo</h9>
 						<small>Densidade de clientes por região</small>
 					</div>
 					<img src="images/heatmap_brasil.png" alt="Densidade de clientes por região" style="width:50%">
+				</section>
+				<!--Slide 12-->
+				<section>
+					<div class="content">
+						<h9 class="title">A subcategoria de produtos com maior valor agregado do cluster 11 são móveis de escritório</h9>
+						<small>Valor agregado por subcategoria de produtos de casa</small>
+					</div>
+					<img src="images/valor_agregado_subcategoria_casa_conforto.png" alt="Densidade de clientes por região" style="width:100%">
+				</section>
+				<!--Slide 13-->
+				<section>
+					<div class="content">
+						<h3 class="title">Persona</h3>
+						<small>Clara é uma pessoa que faz parte da base de clientes do cluster 11</small>
+						<div class="image-bulletpoint-container">
+							<img src="images/clara.jpg" alt="Clara">
+							<ul>
+								<li>Analista de Marketing</li>
+								<li>27 anos</li>
+								<li>Renda mensal de 7 mil reais</li>
+								<li>Se mudou de São Paulo recentemente para trabalhar em um modelo híbrido</li>
+								<li>Precisa de mobiliar sua nova casa e seu escritório, com móveis baratos e de alta qualidade</li>
+								<li>Gosta de ambientes organizados e funcionais para facilitar sua rotina corrida e promover seu bem-estar</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+					</div>
 				</section>
 			</div>
 		</div>
